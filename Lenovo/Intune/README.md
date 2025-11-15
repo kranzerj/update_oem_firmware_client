@@ -7,7 +7,7 @@
 ***
 
 <img width="1098" height="421" alt="image" src="https://github.com/user-attachments/assets/3a73c427-8017-487f-9122-eed13aa1c705" />
- powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\create_folder_file_and_task.ps1.ps1
+ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\create_folder_file_and_task.ps1
  schtasks /delete /tn "LenovoClient-Autoupdate" /f
  
 ***
