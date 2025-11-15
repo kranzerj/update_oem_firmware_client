@@ -17,6 +17,19 @@ App04 dependencies App03 (Automatically Install)
 App 03 dependencies AP02...
 Therefore, it is enough to configure an assignment for the 04_HP_Dockupdate.
 
-#### GPO
+#### Group Policy
 ###### Status: functional, excluding dock updates is pending
 ###### WMI Filter: root\CIMv2        select * from Win32_ComputerSystem where Manufacturer like "HP%"
+***
+### Lenovo
+
+#### Intune
+###### Status: complete
+###### Dynamic membership rule: (device.deviceManufacturer -eq "Lenovo")
+
+#### Group Policy
+###### Status: complete
+###### WMI Filter: root\CIMv2        select * from Win32_ComputerSystem where Manufacturer like "LENOVO%"
+Copy the Task Script via Group Policy to Computer- See at the README (https://github.com/kranzerj/update_oem_firmware_client/tree/main/Lenovo/GPO#readme)  
+
+
