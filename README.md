@@ -35,4 +35,12 @@ Therefore, it is enough to configure an assignment for the 04_HP_Dockupdate.
 ###### WMI Filter: root\CIMv2        select * from Win32_ComputerSystem where Manufacturer like "LENOVO%"
 Copy the Task Script via Group Policy to Computer- See at the README (https://github.com/kranzerj/update_oem_firmware_client/tree/main/Lenovo/GPO#readme)  
 
+***
+
+### DELL
+
+##### No documentation yet. Install and update "Dell Command |Update" via Chocolatey. Use DCU for updates. ADMX templates are available for this. 
+
+
+
 
