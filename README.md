@@ -3,6 +3,9 @@
 Mostly created by Maximilian ‘Max’ Böhler, Josef ‘Josy’ Kranzer (both COUNT IT), and OpenAI ChatGPT.
 In the final stage of development, a solution for Intune (unless otherwise specified as a Windows app) and Group Policy (unless otherwise specified as a computer startup script) should be available for HP, Lenovo, and Dell. 
 This is not currently the case, and the guide is not yet complete. 
+Created for people who are familiar with Intune or Group Policies
+Your use this without any warranty and entirely at your own risk.
+Do you require professional assistance and are you a small to medium-sized European company? Request a quote here: josy [dot] github [at] countit [dot] at
 ***
 
 ### HP 
