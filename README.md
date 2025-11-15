@@ -39,7 +39,10 @@ Copy the Task Script via Group Policy to Computer- See at the README (https://gi
 
 ### DELL
 
-##### No documentation yet. Install and update "Dell Command |Update" via Chocolatey. Use DCU for updates. ADMX templates are available for this. 
+##### No documentation yet
+##### Install and update "Dell Command |Update" via Chocolatey
+##### Use DCU for updates
+##### ADMX templates are available for this
 
 
 
