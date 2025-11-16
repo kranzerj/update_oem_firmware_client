@@ -7,7 +7,7 @@ if (Get-Module -ListAvailable -Name LSUClient) {
     Update-Module -Name LSUClient
 } else {
     Install-PackageProvider -Name NuGet -Force
-    Install-Module -Name LSUClient -Force -Scope CurrentUser
+    Install-Module -Name LSUClient -Force
 }
 
 Write-Host "LSUClient Modul ist jetzt aktuell." -ForegroundColor Green
@@ -32,4 +32,5 @@ foreach ($update in $updates) {
 
 
 Stop-Transcript
+
 
