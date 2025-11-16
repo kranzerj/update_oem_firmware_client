@@ -2,7 +2,14 @@ Start-Transcript -LiteralPath "C:\Lenovo_Autoupdate\lsuclient_$(Get-Date -Format
 
 # Führe den Update-Befehl aus, um sicherzustellen, dass das Modul aktuell ist
 Write-Host "Stelle sicher, dass LSUClient auf dem neuesten Stand ist..." -ForegroundColor Blue
-Update-Module -Name LSUClient
+
+if (Get-Module -ListAvailable -Name LSUClient) {
+    Update-Module -Name LSUClient
+} else {
+    Install-PackageProvider -Name NuGet -Force
+    Install-Module -Name LSUClient -Force -Scope CurrentUser
+}
+
 
 Write-Host "LSUClient Modul ist jetzt aktuell." -ForegroundColor Green
 
