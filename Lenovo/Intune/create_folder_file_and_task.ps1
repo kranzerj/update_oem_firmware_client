@@ -7,12 +7,7 @@ Start-Transcript -LiteralPath "C:\Lenovo_Autoupdate\startupscript_$(Get-Date -Fo
 
 Copy-Item -Path ".\LSUpdate.ps1" -Destination "C:\Lenovo_Autoupdate\LSUpdate.ps1" -Force
 
-# ---------------------------
-# Alte Logs löschen (älter als 14 Tage)
-# ---------------------------
-Get-ChildItem -Path "C:\Lenovo_Autoupdate\" -Filter "startupscript*.log" | 
-    Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-14) } | 
-    Remove-Item -Force
+
 
 # ---------------------------
 # LSUClient Modul prüfen und installieren/aktualisieren
@@ -103,5 +98,6 @@ if ($taskExists) {
 
     Write-Host "Der geplante Task '$taskName' wurde erfolgreich für drei aufeinanderfolgende Arbeitstage erstellt." -ForegroundColor Green
 }
+
 
 Stop-Transcript
